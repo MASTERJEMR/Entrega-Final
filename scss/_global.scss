@@ -1,51 +1,6 @@
-*{
-    border: 0;
-    padding: 0;
-}
-body {
-    background-color: $fondo1;
-    position: relative;
-    min-height: 100vh;
-    min-width: 100vw;    
-}
+
 
 /*menu*/
-.menu {
-    font-size: 1.5rem;
-    background-color: $fondo3 !important;
-    border-radius: 20px;
-    margin: 30px;
-    padding: 4px;
-}
-
-.logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    margin: 2px;
-}
-
-.nav-link {
-    color: $hcolor !important;
-}
-
-a {
-    color: $hcolor !important;
-    font-family: 'Poppins';
-}
-
-.navbar-toggler:focus {
-    outline: none;
-}
-
-.offcanvas,
-.offcanvas-lg,
-.offcanvas-md,
-.offcanvas-sm,
-.offcanvas-xl,
-.offcanvas-xxl {
-    --bs-offcanvas-width: 250px;
-}
 
 // Uso Mixins
 

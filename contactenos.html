@@ -1,72 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="shortcut icon" href="./images/logo3.PNG">
-    <meta http-equiv="refresh" content="20" >
-    <title>HEFESTOS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Lato&family=Permanent+Marker&family=Poppins:wght@200;400;500;600;700;800;900&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <!--Fav e Iconos-->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/fav//apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/fav//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/fav//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/fav//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/fav//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/fav//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/fav//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/fav//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./images/fav//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/fav//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/fav//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/fav//favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--Estilos-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Hefestos</title>
 </head>
 <body>
     <header>
-        <ul class="logo"><li><img src="./images/logo3.PNG" alt=""></li><li><h1>HEFESTOS</h1></li></ul>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="noticias.html">NOTICIAS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="contactenos.html">CONTACTENOS</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top menu">
+        <a class="navbar-brand" href="index.html"><img class="logo class="d-inline-block align-top" src="./images/fav/android-icon-72x72.png" alt="">Hefestos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="contactenos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                + Servicios
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="contactenos.html">Produtos</a></li>
+                <li><a class="dropdown-item" href="contactenos.html">Contactenos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="contactenos.html">Soporte</a></li>
+                </ul>
+            </li>
             </ul>
+        </div>
         </nav>
     </header>
-     <center>
 
-    <section class="formulario">
-        <form>
-            <h1>Contactenos</h1>
-            <ul>
-                <li><img src="./images/contactenos.JPG" alt=""></li>
-                <li class="description">Si necesitas ayuda o tienes dudas, puedes comunicarte con nosotros al teléfono 📞 +57 300 300 6577 o al +57 300 241 3225 
-                    o al email  ✉ servicioalclientepqrs@efestos.com.co
-                </li>
-            </ul>
-        <table>
-                <tr>
-                    <td><label for="nombres">Nombres</label> <td><input type="text" name="nombres"></td>
-                    <td><label for="apellidos">Apellidos</label></td><td><input type="text" name="apellidos"></td>
-                </tr>
-                <tr>
-                    <td><label for="tel">Teléfono</label></td><td><input type="text" name="tel"></td>
-                    <td><label for="cel">Celular</label> </td><td><input type="text" name="cel"></td>
-                </tr>
-                <tr>
-                    <td><label for="pais">País</label> </td><td><input type="text" name="pais"></td>
-                    <td><label for="ciudad">Ciudad</label></td>
-                    <td><input type="text" name="ciudad"></td>
-                </tr>
-                <tr>
-                    <td><label for="email">e-mail</label></td>
-                    <td colspan="3"><input type="text" size="30" placeholder="servicioalclientepqrs@efestos.com.co" name="email"></td>
-                </tr>
-                <tr>
-                    <td colspan="4"><label for="motivo">Motivo</label><br>
-                    <textarea name="motivo"  cols="60" rows="10" placeholder="Escriba aquí"></textarea>
-                    </td>
-                </tr>
-                <tr><td colspan="4"><button type="submit">ENVIAR</button></td></tr>
-        </table>
-        
-        
-        </form>
-    </section></center>
-    <footer>
-        <p> © Copyright Efestos 2023 <br>by MASTERJEMR</p> 
+    <main>
 
-    </footer>
+        <article class="call">
+            <h2>Contactenos</h2>
+            <img src="./images/rec.png" alt="">
+            <p>Si necesitas ayuda o tienes dudas, puedes comunicarte con nosotros al teléfono 📞 +57 300 300 6577 o al +57 300 241 3225 
+                o al email  ✉ servicioalclientepqrs@efestos.com.co</p>
+            
+            </article>
+            <div id="formulario" class="container fluid va col-8">
+              <form action="contactenos.html" method="post" enctype="multcorreoart/form-data" class="row g-3 needs-validation" novalidate>
+          
+                    
+              <div class="form-floating mb-0.5 col-md-4">
+                  <input type="text" class="form-control text-uppercase" id="nombre" placeholder="host" name="nombre" autocomplete="off" required>
+                  <label for="nombre">Nombre</label>
+              </div> 
+              <div class="form-floating mb-0.5 col-md-4">
+                  <input type="text" class="form-control text-uppercase" id="apellido" placeholder="apellido" name="apellido" required>
+                  <label for="apellido">Apellido</label>
+              </div>
+              <div class="form-floating mb-0.5 col-md-4">
+                <input type="text" class="form-control text-uppercase" id="correo" placeholder="correo" name="correo" required>
+                <label for="correo">Correo</label>
+              </div>
+          
+              <div class="form-floating mb-0.5 col-md-4">
+                  <input type="text" class="form-control text-uppercase" id="direccion" placeholder="direccion" name="direccion" >
+                  <label for="direccion">Dirección</label>
+              </div>
+              <div class="form-floating mb-0.5 col-md-4">
+                  <input type="text" class="form-control text-uppercase" id="tel" placeholder="tel" name="tel">
+                  <label for="tel">Teléfono</label>
+              </div>
+          
+          
+              <div class="form-floating mb-0.5 col-md-4">
+                  <input type="text" class="form-control text-uppercase" id="cel" placeholder="" name="cel" required>
+                  <label for="cel">Celular</label>
+              </div>
+              
+              <div class="col-12">
+                  <button class="btn btn-primary" type="submit">ENVIAR</button>
+              </div>
+              
+          </form>
+          </div>
+     
+            
+            </form>
+        </section>
+
+    </main>
+
+
+
+</main>
+<footer class="position-absolute">
+  <h3>© Copyright Efestos 2023 <br>by MASTERJEMR</h3>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>
 </html>
