@@ -1,4 +1,50 @@
 @charset "UTF-8";
+.galeria {
+  border-radius: 20px;
+  margin: 20px;
+  background-color: #223d56;
+}
+.galeria .imagen img {
+  height: 25vh;
+  width: 30vw;
+  margin: 30px;
+  border: double grey 2px;
+  opacity: 0.5;
+}
+.galeria .imagen img:hover {
+  border: double goldenrod 2px;
+  border-radius: 5px;
+  opacity: 1;
+  height: 35vh;
+  width: 50vw;
+  transition-delay: 300ms, 300ms, 5ms, 5ms;
+  transition-property: border, opacity, width, height;
+}
+
+.productos, .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+.productos h1, .galeria h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.producto img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+.producto p {
+  color: white;
+  background-color: #223d56;
+  border-radius: 5px;
+  text-align: justify;
+  width: 200px;
+}
+
 * {
   border: 0;
   padding: 0;
@@ -17,13 +63,26 @@ a {
   font-family: "Poppins";
 }
 
-.h1, .galeria h4, .productos h1, .galeria h1, main .carrusel h5 {
+.h1, .carrusel h5, .galeria h4, .productos h1, .galeria h1 {
   color: goldenrod;
   text-shadow: 1px 2px 2px black;
 }
 
 ul {
   list-style: none;
+}
+
+.carrusel h5 {
+  font-family: "Permanent Marker";
+  font-size: 2rem;
+}
+.carrusel p {
+  font-size: 2rem;
+  text-shadow: 1px 2px 2px black;
+}
+.carrusel .w-100 {
+  height: 480px;
+  border-radius: 20px;
 }
 
 .menu {
@@ -83,8 +142,8 @@ footer {
 }
 
 .formulario {
-  border: 30px;
-  padding: 30px;
+  border: 10px;
+  padding: 10px;
 }
 
 .form-floating {
@@ -110,6 +169,7 @@ footer {
 main {
   margin-top: 100px;
   text-align: center;
+  align-items: center;
 }
 main #imcorp {
   width: 0px;
@@ -118,61 +178,10 @@ main section {
   width: 100%;
   text-align: center;
 }
-main .carrusel h5 {
-  font-family: "Permanent Marker";
-  font-size: 2rem;
-}
-main .carrusel p {
-  font-size: 2rem;
-  text-shadow: 1px 2px 2px black;
-}
-main .carrusel .w-100 {
-  height: 480px;
-  border-radius: 20px;
-}
 
-.productos, .galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 100px;
-  padding-bottom: 10px;
-}
-.productos h1, .galeria h1 {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
-}
-
-.producto img {
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-}
-.producto p {
-  width: 200px;
-  text-align: justify;
-}
-
-.galeria {
-  border-radius: 20px;
-  margin: 20px;
-  background-color: #223d56;
-}
-.galeria .imagen img {
-  width: 450px;
-  height: 350px;
-  margin: 30px;
-  border: double grey 2px;
-  opacity: 0.5;
-}
-.galeria .imagen img:hover {
-  border: double goldenrod 2px;
-  border-radius: 5px;
-  opacity: 1;
-  width: 550px;
-  height: 450px;
-  transition-delay: 300ms, 300ms, 5ms, 5ms;
-  transition-property: border, opacity, width, heigh;
+.presentacion {
+  text-align: center;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -182,6 +191,10 @@ main .carrusel .w-100 {
   .imagen_empresa {
     display: none;
   }
+  #imcorp {
+    height: 0px;
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -190,6 +203,9 @@ main .carrusel .w-100 {
   .imagen_empresa {
     display: none;
   }
+  #imcorp {
+    width: 0px;
+  }
 }
 @media (max-width: 430px) {
   body {
@@ -197,9 +213,6 @@ main .carrusel .w-100 {
   }
   .carrusel {
     display: none;
-  }
-  main #imcorp {
-    width: 80%;
   }
 }
 /* implementación SASS 7-1*/

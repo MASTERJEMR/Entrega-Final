@@ -1,0 +1,27 @@
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    h1{
+        @extend .h1;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+    }
+    
+}
+.producto{
+    img{
+        
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        }
+    p{
+        color: white;
+        background-color: $fondo3;
+        border-radius: 5px;
+        text-align: justify;
+        width: 200px;
+    }
+}

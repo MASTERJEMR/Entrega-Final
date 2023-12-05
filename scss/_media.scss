@@ -6,6 +6,11 @@
     .imagen_empresa{
         display: none;
     }
+    
+    #imcorp{
+        height: 0px;
+        width: 100%;
+    }
 }
 @media(max-width: 768px){
     body{
@@ -13,6 +18,10 @@
     }
     .imagen_empresa{
         display: none;
+    }
+    
+    #imcorp{
+        width: 0px;
     }
 
 }
@@ -22,11 +31,5 @@
     }
     .carrusel{
         display: none;
-    }
-    main{
-        #imcorp{
-            width: 80%;
-        }
-    }
-        
+    }        
 }

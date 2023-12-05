@@ -2,8 +2,13 @@
  './abstracts/var';
 
 @import 
+'./base/galeria',
+'./base/productos',
 './base/reset', 
 './base/typography';
+
+@import
+'./components/carrusel';
 
 
 @import 
@@ -12,11 +17,13 @@
 './layout/footer';
 
 @import
-'./pages/contactenos';
+'./pages/contactenos',
+'./pages/inicio';
+
 
 
 //@import 'global';
-@import 'main';
+//@import 'main';
 
 @import 'media';
 
