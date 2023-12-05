@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   border: 0;
   padding: 0;
@@ -165,5 +166,6 @@ footer {
     width: 80%;
   }
 }
+/* implementación SASS 7-1*/
 
 /*# sourceMappingURL=styles.css.map */
