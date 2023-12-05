@@ -1,0 +1,169 @@
+* {
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/*menu*/
+.menu {
+  font-size: 1.5rem;
+  background-color: #223d56 !important;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 4px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.nav-link {
+  color: goldenrod !important;
+}
+
+a {
+  color: goldenrod !important;
+  font-family: "Poppins";
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+  --bs-offcanvas-width: 250px;
+}
+
+/*
+
+@mixin caja-flex ($principal,$cruzado,$wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+}*/
+.h1, .galeria h4, .productos h1, .galeria h1, main .carrusel h5 {
+  color: goldenrod;
+  text-shadow: 1px 2px 2px black;
+}
+
+main {
+  margin-top: 100px;
+  text-align: center;
+}
+main #imcorp {
+  width: 0px;
+}
+main section {
+  width: 100%;
+  text-align: center;
+}
+main .carrusel h5 {
+  font-family: "Permanent Marker";
+  font-size: 2rem;
+}
+main .carrusel p {
+  font-size: 2rem;
+  text-shadow: 1px 2px 2px black;
+}
+main .carrusel .w-100 {
+  height: 480px;
+  border-radius: 20px;
+}
+
+.productos, .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+}
+.productos h1, .galeria h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.producto img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+.producto p {
+  width: 200px;
+  text-align: justify;
+}
+
+.galeria {
+  border-radius: 20px;
+  margin: 20px;
+  background-color: #223d56;
+}
+.galeria .imagen img {
+  width: 450px;
+  height: 350px;
+  margin: 30px;
+  border: double grey 2px;
+  opacity: 0.5;
+}
+.galeria .imagen img:hover {
+  border: double goldenrod 2px;
+  border-radius: 5px;
+  opacity: 1;
+  width: 550px;
+  height: 450px;
+  transition-delay: 300ms, 300ms, 5ms, 5ms;
+  transition-property: border, opacity, width, heigh;
+}
+
+footer {
+  width: 100%;
+  color: goldenrod;
+  text-align: center;
+  background-color: #223d56;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-color: white;
+  }
+  .imagen_empresa {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+  .imagen_empresa {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  body {
+    background-color: rgb(134, 169, 235);
+  }
+  .carrusel {
+    display: none;
+  }
+  main #imcorp {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+//Pantallas grandes
+@media(max-width: 1024px){
+    body{
+        background-color: $fondo1;
+    }
+    .imagen_empresa{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    body{
+        background-color: red;
+    }
+    .imagen_empresa{
+        display: none;
+    }
+
+}
+@media (max-width: 430px) {
+    body{
+        background-color: $fondo2;
+    }
+    .carrusel{
+        display: none;
+    }
+    main{
+        #imcorp{
+            width: 80%;
+        }
+    }
+        
+}
