@@ -1,0 +1,21 @@
+@function font-cal($size, $type){
+    $font: 1;
+    @if $type==h1{
+        $font: 2*$size;
+    }
+    @if $type==h2{
+        $font: $size;
+    }
+    @if $type==h3{
+        $font: 0.7*$size;
+    }
+    
+    @if $type==p{
+        $font: 0.5*$size;
+    }
+    @else{
+        $font:1;
+    }
+    @return $font+rem;
+
+}

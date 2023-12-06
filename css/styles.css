@@ -1,14 +1,14 @@
 @charset "UTF-8";
-.galeria h2 {
+.galeria h1 {
+  font-size: 2rem;
   font-family: "Permanent Marker";
-  font-size: 4rem;
 }
 .galeria .imagen img {
-  height: 25vh;
-  width: 30vw;
-  margin: 30px;
   border: double grey 2px;
+  height: 25vh;
+  margin: 30px;
   opacity: 0.5;
+  width: 30vw;
 }
 .galeria .imagen img:hover {
   border: double goldenrod 2px;
@@ -66,7 +66,7 @@ body h1 {
 }
 @media (max-width: 430px) {
   body {
-    background-color: rgb(134, 169, 235);
+    background-color: #3e6e9b;
   }
   .carrusel {
     display: none;
@@ -104,7 +104,14 @@ a {
   font-family: "Poppins";
 }
 
-.h1, .noticias h1, .carrusel h5, .galeria h2, .galeria h4 {
+.h1, .noticias h1, .carrusel h5 {
+  font-size: 1rem;
+  color: goldenrod;
+  text-shadow: 1px 2px 2px black;
+}
+
+.h2 {
+  font-size: 1rem;
   color: goldenrod;
   text-shadow: 1px 2px 2px black;
 }
@@ -126,14 +133,6 @@ ul {
   border-radius: 20px;
 }
 
-.menu {
-  font-size: 1.5rem;
-  background-color: #223d56 !important;
-  border-radius: 20px;
-  margin: 30px;
-  padding: 4px;
-}
-
 .logo {
   width: 30px;
   height: 30px;
@@ -141,8 +140,27 @@ ul {
   margin: 2px;
 }
 
+.menu {
+  font-size: 1rem;
+  background-color: #223d56 !important;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 4px;
+}
+
+.navbar-toggler {
+  color: goldenrod;
+}
+
 .nav-link {
   color: goldenrod !important;
+}
+.nav-link:hover {
+  border-bottom: solid 2px white;
+  font-size: 2rem;
+  text-shadow: 1px 2px 2px goldenrod;
+  transition-delay: 300ms 300ms;
+  transition-property: border-bottom, text-shadow, font-size;
 }
 
 .navbar-toggler:focus {
@@ -158,10 +176,6 @@ ul {
   --bs-offcanvas-width: 250px;
 }
 
-.navbar-toggler {
-  color: goldenrod;
-}
-
 table {
   color: goldenrod;
   border: solid 5px goldenrod;
@@ -174,6 +188,7 @@ table td {
 }
 
 footer {
+  font-size: 1rem;
   width: 100%;
   color: goldenrod;
   text-align: center;

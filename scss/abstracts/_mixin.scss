@@ -1,0 +1,10 @@
+//animación al hover del ancla <a>
+
+@mixin aHover($fontSize,$color){
+    
+        border-bottom: solid 2px $color;
+        font-size: $fontSize;
+        text-shadow: 1px 2px 2px $hcolor;
+        transition-delay: 300ms 300ms;
+        transition-property: border-bottom, text-shadow, font-size;
+}

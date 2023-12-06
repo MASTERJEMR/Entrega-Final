@@ -1,21 +1,25 @@
 
-.menu {
-    font-size: 1.5rem;
-    background-color: $fondo3 !important;
-    border-radius: 20px;
-    margin: 30px;
-    padding: 4px;
-}
-
 .logo {
     width: 30px;
     height: 30px;
     border-radius: 5px;
     margin: 2px;
 }
-
+.menu {
+    font-size: font-cal(3, h1);
+    background-color: $fondo3 !important;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 4px;
+}
+.navbar-toggler {
+    color: $hcolor;
+}
 .nav-link {
     color: $hcolor !important;
+    &:hover{
+        @include aHover(2rem,white);
+    }
 }
 
 
@@ -30,7 +34,4 @@
 .offcanvas-xl,
 .offcanvas-xxl {
     --bs-offcanvas-width: 250px;
-}
-.navbar-toggler {
-    color: $hcolor;
 }

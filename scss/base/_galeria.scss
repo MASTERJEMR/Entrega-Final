@@ -1,21 +1,16 @@
 .galeria{
     @extend .productos;
-    h2{
-        @extend .h1;
+    h1{
+        font-size: 2rem ;
         font-family: 'Permanent Marker';
-        font-size: 4rem;
-        
-    }
-    h4{
-        @extend .h1;
     }
     .imagen{
         img{
-            height: 25vh;
-            width: 30vw;
-            margin: 30px;
             border: double grey 2px;
-            opacity: 0.5;
+            height: 25vh;
+            margin: 30px;
+            opacity: 0.5;            
+            width: 30vw;
             &:hover{
                 border: double $hcolor 2px;
                 border-radius: 5px;

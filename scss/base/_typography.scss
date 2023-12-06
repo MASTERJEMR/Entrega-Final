@@ -4,6 +4,12 @@ a {
 }
 
 .h1{
+    font-size: font-cal(3, h1);
+    color: $hcolor;
+    text-shadow: 1px 2px 2px black;
+}
+.h2{
+    font-size: font-cal(3, h2);
     color: $hcolor;
     text-shadow: 1px 2px 2px black;
 }

@@ -1,9 +1,10 @@
 footer {
+    font-size: font-cal(3, h1);
     width: 100%;
     color: $hcolor;
     text-align: center;
     background-color: $fondo3 !important;
     //position: absolute;
     bottom: 0;
-    left: 0;   
+    left: 0;
 }
