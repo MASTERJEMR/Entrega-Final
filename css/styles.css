@@ -41,6 +41,37 @@ body h1 {
     align-items: $cruzado;
     flex-wrap: $wrap;
 }*/
+@media (max-width: 1024px) {
+  body {
+    background-color: white;
+  }
+  .imagen_empresa {
+    display: none;
+  }
+  #imcorp {
+    height: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+  .imagen_empresa {
+    display: none;
+  }
+  #imcorp {
+    width: 0px;
+  }
+}
+@media (max-width: 430px) {
+  body {
+    background-color: rgb(134, 169, 235);
+  }
+  .carrusel {
+    display: none;
+  }
+}
 .productos, .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -223,37 +254,6 @@ main section {
   width: 300px;
 }
 
-@media (max-width: 1024px) {
-  body {
-    background-color: white;
-  }
-  .imagen_empresa {
-    display: none;
-  }
-  #imcorp {
-    height: 0px;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    background-color: red;
-  }
-  .imagen_empresa {
-    display: none;
-  }
-  #imcorp {
-    width: 0px;
-  }
-}
-@media (max-width: 430px) {
-  body {
-    background-color: rgb(134, 169, 235);
-  }
-  .carrusel {
-    display: none;
-  }
-}
 /* implementación SASS 7-1*/
 
 /*# sourceMappingURL=styles.css.map */
