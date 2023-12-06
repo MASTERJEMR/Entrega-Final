@@ -1,9 +1,14 @@
 .galeria{
-    border-radius: 20px;
-    margin: 20px;
     @extend .productos;
-    background-color: $fondo3;
-    h4{@extend .h1}
+    h2{
+        @extend .h1;
+        font-family: 'Permanent Marker';
+        font-size: 4rem;
+        
+    }
+    h4{
+        @extend .h1;
+    }
     .imagen{
         img{
             height: 25vh;

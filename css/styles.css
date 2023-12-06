@@ -1,8 +1,7 @@
 @charset "UTF-8";
-.galeria {
-  border-radius: 20px;
-  margin: 20px;
-  background-color: #223d56;
+.galeria h2 {
+  font-family: "Permanent Marker";
+  font-size: 4rem;
 }
 .galeria .imagen img {
   height: 25vh;
@@ -21,15 +20,33 @@
   transition-property: border, opacity, width, height;
 }
 
+body {
+  border: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+body h1 {
+  color: goldenrod;
+  text-shadow: 1px 2px 2px black;
+}
+
+/*menu*/
+/*
+
+@mixin caja-flex ($principal,$cruzado,$wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+}*/
 .productos, .galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
-  padding-bottom: 100px;
-}
-.productos h1, .galeria h1 {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  padding-bottom: 80px;
 }
 
 .producto img {
@@ -41,6 +58,7 @@
   color: white;
   background-color: #223d56;
   border-radius: 5px;
+  padding: 5px;
   text-align: justify;
   width: 200px;
 }
@@ -50,20 +68,12 @@
   padding: 0;
 }
 
-body {
-  border: 0;
-  padding: 0;
-  min-height: 100vh;
-  min-width: 100vw;
-  position: relative;
-}
-
 a {
   color: goldenrod !important;
   font-family: "Poppins";
 }
 
-.h1, .carrusel h5, .galeria h4, .productos h1, .galeria h1 {
+.h1, .noticias h1, .carrusel h5, .galeria h2, .galeria h4 {
   color: goldenrod;
   text-shadow: 1px 2px 2px black;
 }
@@ -182,6 +192,35 @@ main section {
 .presentacion {
   text-align: center;
   align-items: center;
+}
+
+.noticias {
+  background-color: #223d56;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.noticias h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+.noticias h3 {
+  color: white;
+}
+
+.noticia img {
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+}
+.noticia p {
+  color: white;
+  background-color: #223d56;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: justify;
+  width: 300px;
 }
 
 @media (max-width: 1024px) {

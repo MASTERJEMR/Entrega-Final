@@ -1,83 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="shortcut icon" href="./images/logo3.PNG">
-    <meta http-equiv="refresh" content="20" >
-    <title>HEFESTOS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Lato&family=Permanent+Marker&family=Poppins:wght@200;400;500;600;700;800;900&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <!--Fav e Iconos-->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/fav//apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/fav//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/fav//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/fav//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/fav//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/fav//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/fav//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/fav//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./images/fav//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/fav//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/fav//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/fav//favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--Estilos-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Hefestos</title>
 </head>
-<body>
-    <header>
-        <ul class="logo"><li><img src="./images/logo3.PNG" alt=""></li><li><h1>HEFESTOS</h1></li></ul>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="noticias.html">NOTICIAS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="contactenos.html">CONTACTENOS</a></li>
+<body class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top menu">
+      <a class="navbar-brand" href="index.html"><img class="logo class="d-inline-block align-top" src="./images/fav/android-icon-72x72.png" alt="">Hefestos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">productos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="contactenos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              + Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contactenos.html">Contactenos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="contactenos.html">Soporte</a></li>
             </ul>
-        </nav>
-    </header>
-   <h1 class="news">NOTICIAS</h1></center>
-    <article class="news">
-        <h3>Gestión deportiva</h3>
-        <ul>
-            <li><img src="./images/g13.png" alt="Logistica">
-                <h4>Logística</h4><hr>
-                <p>Un éxito! La décimo treceava versión de los Juegos Fensecoop.<br>
-                <strong>Informate</strong></p>
-            </li>
-            <li><img src="./images/carnet.PNG" alt="Logistica">
-                <h4>Carnetización</h4><hr>
-                <p>Ahora nuestros carnets con código QR y los puedes tener en tú celular.<br>
-                <strong>Informate</strong></p>
-            </li>
-            <li><img src="./images/g11.png" alt="estadísticas">
-                <h4>Estadísticas</h4><hr>
-                <p>Nuestra plataforma evoluciona, lleva las estadísticas deportivas de tú deporte.<br><strong>Informate</strong>
-                </p>
-            </li>
-            <li><img src="./images/g7.png" alt="Logistica">
-                <h4>Boletines Deportivos</h4><hr>
-                <p>Ahora IA, nuestros boletines deportivos ahora se generan en tiempo real.<br><strong>Informate</strong>
-                </p>
-            </li>
+          </li>
         </ul>
-        
-    </article>
-
-    <article class="news">
-        <h3>Gestión educativa</h3>
-        <ul>
-            <li><img src="./images/g5.png" alt="Logistica">
-                <h4>INEM</h4><hr>
-                <p>YA son 53 y van por más!<br>Desde el año 1969, han aportado de manera significativa a la educación en Colombia. <br>
-                <strong>Informate</strong></p>
-            </li>
-            <li><img src="./images/g15.png" alt="Logistica">
-                <h4>Nuevas mejoras</h4><hr>
-                <p>Te escuchamos, Hefestos ha venido desarrollando nuevas mejoras en su plataforma educativa. Abordando topicos tales como ...<br>
-                <strong>Informate</strong></p>
-            </li>
-            <li><img src="./images/g19.png" alt="Logistica">
-                <h4>Notificaciones a padres de familia</h4><hr>
-                <p>Hemos integrado un servicio automático de notificaciones a padres de familia, con los cuales se mejora la comunicación.<br><strong>Informate</strong>
-                </p>
-            </li>
-        </ul>
-        
-    </article>
+      </div>
+    </nav>
+</header>
+  
+<main>
 
 
-    <footer>
-        <p> © Copyright Efestos 2023 <br>by MASTERJEMR</p> 
+  <h1>Noticias</h1>
 
-    </footer>
+<div class="noticias mx-auto col-md-4">
+    <h3>Gestión Deportiva</h3>
+</div>
+<div class="productos  col-8 mx-auto">
+  
+  <div class="noticia">
+
+    <h4>Juegos Fensecoop</h4>
+            <img src="./images/g13.png" alt="logistica"> <hr>
+            <p>Un éxito! La décimo treceava versión de los Juegos Fensecoop. <br>
+                <a href="https://fensecoopxjuegos2023.efestos.com.co/">Informate.</a></p>
+  </div>
+  <div class="noticia">
+    <h4>Carnetización</h4>
+            <img src="./images/carnet.PNG" alt="logistica"> <hr>
+            <p>Ahora nuestros carnets con código QR y los puedes tener en tú celular. <br>
+                <a href="https://efestos.com.co/">Informate.</a></p>
+  </div>
+  <div class="noticia">
+    <h4>Estadísticas</h4>
+            <img src="./images/g11.png" alt="logistica"> <hr>
+            <p>Nuestra plataforma evoluciona, lleva las estadísticas deportivas de tú deporte. <br>
+                <a href="https://efestos.com.co/">Informate.</a></p>
+  </div>
+  <div class="noticia">
+    <h4>Boletines Deportivos</h4>
+            <img src="./images/g6.png" alt="logistica"> <hr>
+            <p>Ahora IA, nuestros boletines deportivos ahora se generan en tiempo real. <br>
+                <a href="https://efestos.com.co/">Informate.</a></p>
+  </div>
+  
+</div>
+
+<div class="noticias mx-auto col-md-4">
+    <h3>Gestión Educativa</h3>
+</div>
+<div class="productos  col-10 mx-auto">
+  
+  <div class="noticia">
+
+    <h4>INEM</h4>
+            <img src="./images/g5.png" alt="logistica"> <hr>
+            <p>YA son 53 y van por más!
+                Desde el año 1969, han aportado de manera significativa a la educación en Colombia. <br>
+                <a href="http://www.inemkennedy.edu.co/">Informate.</a></p>
+  </div>
+  <div class="noticia">
+    <h4>Nuevas mejoras</h4>
+            <img src="./images/g11.png" alt="logistica"> <hr>
+            <p>Te escuchamos, Hefestos ha venido desarrollando nuevas mejoras en su plataforma educativa. Abordando topicos tales como ... <br>
+                <a href="https://efestos.com.co/">Informate.</a></p>
+  </div>
+  <div class="noticia">
+    <h4>Notificaciones </h4>
+            <img src="./images/g19.png" alt="logistica"> <hr>
+            <p>Hemos integrado un servicio automático de notificaciones a padres de familia, con los cuales se mejora la comunicación.<br>
+                <a href="https://efestos.com.co/">Informate.</a></p>
+  </div>
+  
+</div>
+</main>
+<footer class="position-absolute">
+  <h3>© Copyright Efestos 2023 <br>by MASTERJEMR</h3>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>
 </html>
