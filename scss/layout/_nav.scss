@@ -11,10 +11,8 @@
     border-radius: 20px;
     margin: 30px;
     padding: 4px;
-}
-.navbar-toggler {
-    color: $hcolor;
-}
+}       
+
 .nav-link {
     color: $hcolor !important;
     &:hover{
@@ -22,7 +20,9 @@
     }
 }
 
-
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffbb00;
+}
 .navbar-toggler:focus {
     outline: none;
 }

@@ -148,10 +148,6 @@ ul {
   padding: 4px;
 }
 
-.navbar-toggler {
-  color: goldenrod;
-}
-
 .nav-link {
   color: goldenrod !important;
 }
@@ -161,6 +157,10 @@ ul {
   text-shadow: 1px 2px 2px goldenrod;
   transition-delay: 300ms 300ms;
   transition-property: border-bottom, text-shadow, font-size;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffbb00;
 }
 
 .navbar-toggler:focus {
