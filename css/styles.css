@@ -55,7 +55,7 @@ body h1 {
 }
 @media (max-width: 768px) {
   body {
-    background-color: red;
+    background-color: white;
   }
   .imagen_empresa {
     display: none;
